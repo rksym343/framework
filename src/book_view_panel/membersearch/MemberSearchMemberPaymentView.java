@@ -1,6 +1,9 @@
-package book_view_panel;
+package book_view_panel.membersearch;
 
 import javax.swing.JPanel;
+
+import book_view_panel.PaymentDataDetail;
+
 import java.awt.GridLayout;
 import javax.swing.JLabel;
 import java.awt.FlowLayout;

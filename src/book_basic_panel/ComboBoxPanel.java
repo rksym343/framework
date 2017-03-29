@@ -6,6 +6,7 @@ import java.util.Vector;
 
 import javax.swing.JComboBox;
 
+@SuppressWarnings("serial")
 public class ComboBoxPanel<T> extends CompPanel {
 
 	private JComboBox<T> comboBox;

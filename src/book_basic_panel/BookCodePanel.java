@@ -1,25 +1,16 @@
-package book_panel;
+package book_basic_panel;
 
 import javax.swing.JPanel;
-import javax.swing.JLabel;
 import javax.swing.JTextField;
 import java.awt.GridLayout;
 import java.util.regex.Pattern;
 
-import javax.swing.SwingConstants;
-import java.awt.GridBagLayout;
-import java.awt.GridBagConstraints;
-import java.awt.Insets;
-
+@SuppressWarnings("serial")
 public class BookCodePanel extends CompPanel {
 	protected JTextField tfBCode;
 	protected JTextField tfBSubCode;
 
-	/**
-	 * Create the panel.
-	 */
 	public BookCodePanel() {
-		setLayout(new GridLayout(0, 2, 10, 0));
 		
 		JPanel panel = new JPanel();
 		pValue.add(panel);

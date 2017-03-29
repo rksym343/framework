@@ -4,23 +4,22 @@ import javax.swing.JPanel;
 import java.awt.GridLayout;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
+import java.awt.GridBagLayout;
+import java.awt.GridBagConstraints;
+import java.awt.Insets;
 
 @SuppressWarnings("serial")
-public class CompPanel extends JPanel {
+public class CompPanel extends BasicPanel {
 	
 	protected JLabel lblTitle;
 	protected JPanel pValue;
 
 	public CompPanel() {
-		setLayout(new GridLayout(0, 2, 10, 0));
-
+		
 		lblTitle = new JLabel("New label");
 		lblTitle.setHorizontalAlignment(SwingConstants.TRAILING);
-		add(lblTitle);
-
-		pValue = new JPanel();
-		add(pValue);
-		pValue.setLayout(new GridLayout(1, 0, 0, 0));
+		pTitle.add(lblTitle);
+	
 
 	}
 

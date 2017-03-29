@@ -1,9 +1,9 @@
 package book_basic_panel;
 
+import java.awt.GridLayout;
+
 import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
-
-import java.awt.GridLayout;
 
 @SuppressWarnings("serial")
 public class SpinnerPanel extends CompPanel {

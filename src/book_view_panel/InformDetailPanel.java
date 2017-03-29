@@ -6,7 +6,7 @@ import javax.swing.JLabel;
 import java.awt.FlowLayout;
 import java.awt.Rectangle;
 import javax.swing.JButton;
-import book_panel.MemberInfo22;
+import book_panel.MemberInfo;
 import java.awt.BorderLayout;
 import javax.swing.BoxLayout;
 import java.awt.Font;

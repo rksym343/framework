@@ -1,13 +1,10 @@
 package book_basic_panel;
 
-import javax.swing.JPanel;
-import javax.swing.JLabel;
-import javax.swing.JTextField;
-import java.awt.GridLayout;
 import java.util.regex.Pattern;
 
-import javax.swing.SwingConstants;
+import javax.swing.JTextField;
 
+@SuppressWarnings("serial")
 public class InputComp extends CompPanel {
 	private JTextField tF;
 
@@ -15,10 +12,9 @@ public class InputComp extends CompPanel {
 	 * Create the panel.
 	 */
 	public InputComp() {
-		setLayout(new GridLayout(0, 2, 10, 0));
-
+		
 		tF = new JTextField();
-		pValue.add(tF);
+		pContent.add(tF);
 		tF.setColumns(10);
 
 	}

@@ -9,7 +9,7 @@ import java.awt.Insets;
 import java.awt.GridBagLayout;
 import java.awt.GridBagConstraints;
 
-public class OptionSearchPanel extends JPanel {
+public class OptionSearchPanel extends BasicPanel {
 
 	protected JCheckBox chbTitle;
 	protected JPanel panel;
@@ -18,14 +18,13 @@ public class OptionSearchPanel extends JPanel {
 	 * Create the panel.
 	 */
 	public OptionSearchPanel() {
-		setLayout(new GridLayout(0, 2, 0, 10));
 		
 		chbTitle = new JCheckBox("title");
+		pTitle.add(chbTitle);
 		chbTitle.setMargin(new Insets(2, 30, 2, 2));
-		add(chbTitle);
 		
 		panel = new JPanel();
-		add(panel);
+		pContent.add(panel);
 		panel.setLayout(new GridLayout(1, 0, 0, 0));
 
 	}

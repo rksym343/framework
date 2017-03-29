@@ -1,12 +1,14 @@
 package book_view_panel;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.awt.GridLayout;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import java.awt.GridLayout;
+
+import book_view_panel.booksearch.BookSearchViewPanel200000;
+import book_view_panel.membersearch.memberSearchViewPanel200;
 
 public class ViewTest extends JFrame {
 
@@ -33,13 +35,13 @@ public class ViewTest extends JFrame {
 	 */
 	public ViewTest() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 700, 500);
+		setBounds(100, 100, 500, 400);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(new GridLayout(0, 1, 0, 0));
 		
-		MemberSearchMemberDetailView panel = new MemberSearchMemberDetailView();
+		memberSearchViewPanel200 panel = new memberSearchViewPanel200();
 		contentPane.add(panel);
 	}
 

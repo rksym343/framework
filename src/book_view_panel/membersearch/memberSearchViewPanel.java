@@ -1,16 +1,10 @@
-package book_view_panel;
+package book_view_panel.membersearch;
 
+import javax.swing.JButton;
 import javax.swing.JPanel;
 
 import book_panel.memberSearchPanel;
-
-import java.awt.GridLayout;
-import panel.nameSearchPanel111;
-import javax.swing.JButton;
-import java.awt.GridBagLayout;
-import java.awt.GridBagConstraints;
-import java.awt.Insets;
-import java.awt.FlowLayout;
+import book_view_panel.AbsViewPanel;
 
 public class memberSearchViewPanel extends AbsViewPanel {
 
