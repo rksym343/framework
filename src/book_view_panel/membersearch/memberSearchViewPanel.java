@@ -1,8 +1,12 @@
 package book_view_panel.membersearch;
 
-import javax.swing.JButton;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.Insets;
+
 import javax.swing.JPanel;
 
+import book_panel.CheckSearchDesign;
 import book_panel.memberSearchPanel;
 import book_view_panel.AbsViewPanel;
 
@@ -12,29 +16,35 @@ public class memberSearchViewPanel extends AbsViewPanel {
 	 * Create the panel.
 	 */
 	public memberSearchViewPanel() {
-		setLayout(null);
+		GridBagLayout gridBagLayout = new GridBagLayout();
+		gridBagLayout.columnWidths = new int[]{775, 0};
+		gridBagLayout.rowHeights = new int[] {200, 400, 0};
+		gridBagLayout.columnWeights = new double[]{0.0, Double.MIN_VALUE};
+		gridBagLayout.rowWeights = new double[]{0.0, 0.0, Double.MIN_VALUE};
+		setLayout(gridBagLayout);
 		
-		JPanel panel = new JPanel();
-		panel.setBounds(0, 0, 775, 150);
-		add(panel);
-		panel.setLayout(null);
-		
-		memberSearchPanel panel_2 = new memberSearchPanel();
-		panel_2.setBounds(0, 0, 560, 150);
-		panel.add(panel_2);
-		
-		JPanel panel_3 = new JPanel();
-		panel_3.setBounds(572, 0, 202, 150);
-		panel.add(panel_3);
-		panel_3.setLayout(null);
-		
-		JButton btnSearch = new JButton("검색");
-		btnSearch.setBounds(50, 50, 100, 50);
-		panel_3.add(btnSearch);
+		CheckSearchDesign panel = new CheckSearchDesign();
+		GridBagLayout gridBagLayout_1 = (GridBagLayout) panel.getLayout();
+		gridBagLayout_1.rowHeights = new int[] {200, 0};
+		memberSearchPanel msp = new memberSearchPanel();
+		panel.getpContent().add(msp);
+		GridBagConstraints gbc_panel = new GridBagConstraints();
+		gbc_panel.weighty = 1.0;
+		gbc_panel.weightx = 1.0;
+		gbc_panel.fill = GridBagConstraints.BOTH;
+		gbc_panel.insets = new Insets(0, 0, 5, 0);
+		gbc_panel.gridx = 0;
+		gbc_panel.gridy = 0;
+		add(panel, gbc_panel);
 		
 		JPanel panel_1 = new JPanel();
-		panel_1.setBounds(0, 160, 775, 440);
-		add(panel_1);
+		GridBagConstraints gbc_panel_1 = new GridBagConstraints();
+		gbc_panel_1.weighty = 2.0;
+		gbc_panel_1.weightx = 1.0;
+		gbc_panel_1.fill = GridBagConstraints.BOTH;
+		gbc_panel_1.gridx = 0;
+		gbc_panel_1.gridy = 1;
+		add(panel_1, gbc_panel_1);
 
 	}
 }

@@ -5,6 +5,7 @@ import javax.swing.JPanel;
 import book_basic_panel.PasswordPanel;
 
 import javax.swing.BoxLayout;
+import java.awt.GridLayout;
 
 public class memberPassword extends JPanel {
 
@@ -15,7 +16,7 @@ public class memberPassword extends JPanel {
 	 * Create the panel.
 	 */
 	public memberPassword() {
-		setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+		setLayout(new GridLayout(0, 1, 0, 10));
 		
 		pPw1 = new PasswordPanel();
 		pPw1.setTitle("비밀번호 입력");

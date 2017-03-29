@@ -7,8 +7,8 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import book_view_panel.booksearch.BookSearchViewPanel200000;
-import book_view_panel.membersearch.memberSearchViewPanel200;
+import book_view_panel.booksearch.BookSearchViewPanel;
+import book_view_panel.membersearch.memberSearchViewPanel;
 
 public class ViewTest extends JFrame {
 
@@ -41,7 +41,7 @@ public class ViewTest extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(new GridLayout(0, 1, 0, 0));
 		
-		memberSearchViewPanel200 panel = new memberSearchViewPanel200();
+		memberSearchViewPanel panel = new memberSearchViewPanel();
 		contentPane.add(panel);
 	}
 
