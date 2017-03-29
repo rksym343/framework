@@ -8,7 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import java.awt.GridLayout;
 
-public class dsfsdfsdfsdfs extends JFrame {
+public class ViewTest extends JFrame {
 
 	private JPanel contentPane;
 
@@ -19,7 +19,7 @@ public class dsfsdfsdfsdfs extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					dsfsdfsdfsdfs frame = new dsfsdfsdfsdfs();
+					ViewTest frame = new ViewTest();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -31,15 +31,15 @@ public class dsfsdfsdfsdfs extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public dsfsdfsdfsdfs() {
+	public ViewTest() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 775, 600);
+		setBounds(100, 100, 650, 450);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(new GridLayout(0, 1, 0, 0));
 		
-		BookReturnPanel panel = new BookReturnPanel();
+		BookSearchBookDetailView panel = new BookSearchBookDetailView();
 		contentPane.add(panel);
 	}
 

@@ -8,7 +8,7 @@ import javax.swing.SwingConstants;
 @SuppressWarnings("serial")
 public class CompPanel extends JPanel {
 	
-	private JLabel lblTitle;
+	protected JLabel lblTitle;
 	protected JPanel pValue;
 
 	public CompPanel() {

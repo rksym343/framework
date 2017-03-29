@@ -8,9 +8,8 @@ import java.util.regex.Pattern;
 
 import javax.swing.SwingConstants;
 
-public class InputComp extends JPanel {
+public class InputComp extends CompPanel {
 	private JTextField tF;
-	private JLabel lblTitle;
 
 	/**
 	 * Create the panel.
@@ -18,12 +17,8 @@ public class InputComp extends JPanel {
 	public InputComp() {
 		setLayout(new GridLayout(0, 2, 10, 0));
 
-		lblTitle = new JLabel("New label");
-		lblTitle.setHorizontalAlignment(SwingConstants.TRAILING);
-		add(lblTitle);
-
 		tF = new JTextField();
-		add(tF);
+		pValue.add(tF);
 		tF.setColumns(10);
 
 	}
@@ -48,11 +43,7 @@ public class InputComp extends JPanel {
 		return lblTitle.getText();
 	}
 
-	public void setTitle(String str) {
-		lblTitle.setText(str);
-	}
-	
-	public boolean isEmpty(){
+	public boolean isEmpty() {
 		if (getTFValue().equals("")) {
 			return true;
 		}

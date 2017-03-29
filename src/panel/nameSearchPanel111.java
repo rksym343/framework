@@ -8,12 +8,12 @@ import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import java.awt.GridLayout;
 
-public class MemberSearchPanel extends JPanel {
+public class nameSearchPanel111 extends JPanel {
 
 	/**
 	 * Create the panel.
 	 */
-	public MemberSearchPanel() {
+	public nameSearchPanel111() {
 		setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 		
 		JPanel panel = new JPanel();

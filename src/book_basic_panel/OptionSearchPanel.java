@@ -6,6 +6,8 @@ import java.awt.GridLayout;
 import javax.swing.SwingConstants;
 import java.awt.Rectangle;
 import java.awt.Insets;
+import java.awt.GridBagLayout;
+import java.awt.GridBagConstraints;
 
 public class OptionSearchPanel extends JPanel {
 
@@ -16,7 +18,7 @@ public class OptionSearchPanel extends JPanel {
 	 * Create the panel.
 	 */
 	public OptionSearchPanel() {
-		setLayout(new GridLayout(0, 2, 10, 0));
+		setLayout(new GridLayout(0, 2, 0, 10));
 		
 		chbTitle = new JCheckBox("title");
 		chbTitle.setMargin(new Insets(2, 30, 2, 2));

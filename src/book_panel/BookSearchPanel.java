@@ -5,6 +5,7 @@ import javax.swing.JPanel;
 
 import book_basic_panel.OptionSearchCmb;
 import book_basic_panel.OptionSearchTF;
+import java.awt.GridLayout;
 
 public class BookSearchPanel extends JPanel {
 
@@ -12,7 +13,7 @@ public class BookSearchPanel extends JPanel {
 	 * Create the panel.
 	 */
 	public BookSearchPanel() {
-		setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+		setLayout(new GridLayout(0, 1, 0, 10));
 		
 		OptionSearchTF pBCode = new OptionSearchTF();
 		pBCode.setTitle("도서코드");
