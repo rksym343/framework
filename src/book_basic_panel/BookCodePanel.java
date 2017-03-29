@@ -1,4 +1,4 @@
-package book_basic_panel;
+package book_panel;
 
 import javax.swing.JPanel;
 import javax.swing.JLabel;
@@ -10,25 +10,20 @@ import javax.swing.SwingConstants;
 import java.awt.GridBagLayout;
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
-import java.awt.FlowLayout;
 
-public class bookCodePanel extends JPanel {
-	private JTextField tfBCode;
-	private JTextField tfBSubCode;
+public class BookCodePanel extends CompPanel {
+	protected JTextField tfBCode;
+	protected JTextField tfBSubCode;
 
 	/**
 	 * Create the panel.
 	 */
-	public bookCodePanel() {
+	public BookCodePanel() {
 		setLayout(new GridLayout(0, 2, 10, 0));
 		
-		JLabel lblNewLabel = new JLabel("도서코드");
-		lblNewLabel.setHorizontalAlignment(SwingConstants.TRAILING);
-		add(lblNewLabel);
-		
 		JPanel panel = new JPanel();
-		add(panel);
-		panel.setLayout(new GridLayout(0, 2, 0, 0));
+		pValue.add(panel);
+		panel.setLayout(new GridLayout(0, 2, 2, 0));
 		
 		tfBCode = new JTextField();
 		panel.add(tfBCode);
@@ -37,6 +32,9 @@ public class bookCodePanel extends JPanel {
 		tfBSubCode = new JTextField();
 		panel.add(tfBSubCode);
 		tfBSubCode.setColumns(2);
+		
+
+		setTitle("도 서 코 드");
 
 	}
 

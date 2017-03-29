@@ -3,7 +3,7 @@ package book_view_panel;
 import javax.swing.JPanel;
 import java.awt.Rectangle;
 import javax.swing.BoxLayout;
-import book_panel.MemberInfo;
+import book_panel.MemberInfo22;
 import javax.swing.JButton;
 import java.awt.GridLayout;
 import java.awt.GridBagLayout;
@@ -24,7 +24,7 @@ public class memberAddPanel extends AbsViewPanel {
 		gridBagLayout.rowWeights = new double[]{0.0, 0.0, 0.0, Double.MIN_VALUE};
 		setLayout(gridBagLayout);
 		
-		MemberInfo panel = new MemberInfo();
+		MemberInfo22 panel = new MemberInfo22();
 		panel.setBounds(new Rectangle(0, 0, 750, 0));
 		GridBagConstraints gbc_panel = new GridBagConstraints();
 		gbc_panel.fill = GridBagConstraints.BOTH;

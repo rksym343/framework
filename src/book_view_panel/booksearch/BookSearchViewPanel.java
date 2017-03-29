@@ -1,8 +1,10 @@
-package book_view_panel;
+package book_view_panel.booksearch;
 
 import javax.swing.JPanel;
 import java.awt.GridLayout;
 import book_panel.BookSearchPanel;
+import book_view_panel.AbsViewPanel;
+
 import javax.swing.JButton;
 
 public class BookSearchViewPanel extends AbsViewPanel {

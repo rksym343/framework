@@ -3,10 +3,13 @@ package book_panel;
 import java.awt.GridLayout;
 
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 import book_basic_panel.InputComp;
 
 public class MemberInfo extends JPanel {
+	private JTextField textField;
+	protected JPanel panel_10;
 
 	/**
 	 * Create the panel.
@@ -16,27 +19,56 @@ public class MemberInfo extends JPanel {
 		
 		JPanel panelM = new JPanel();
 		add(panelM);
-		panelM.setLayout(new GridLayout(5, 0, 10, 10));
+		panelM.setLayout(new GridLayout(1, 0, 10, 0));
 		
-		InputComp pMCode = new InputComp();
-		pMCode.setTitle("회원코드");
-		panelM.add(pMCode);
+		JPanel panel_1 = new JPanel();
+		panelM.add(panel_1);
+		panel_1.setLayout(new GridLayout(0, 1, 0, 10));
 		
-		InputComp pMName = new InputComp();
-		pMName.setTitle("성      명");
-		panelM.add(pMName);
+		InputComp panel_3 = new InputComp();
+		panel_3.setTitle("회원코드");
+		panel_1.add(panel_3);
 		
-		InputComp pMZipCode = new InputComp();
-		pMZipCode.setTitle("우편번호");
-		panelM.add(pMZipCode);
+		InputComp panel_4 = new InputComp();
+		panel_4.setTitle("성      명");
+		panel_1.add(panel_4);
 		
-		InputComp pMTel = new InputComp();
-		pMTel.setTitle("전화번호");
-		panelM.add(pMTel);
+		InputComp panel_5 = new InputComp();
+		panel_5.setTitle("전화번호");
+		panel_1.add(panel_5);
 		
-		InputComp pMAddress = new InputComp();
-		pMAddress.setTitle("주      소");
-		panelM.add(pMAddress);
+		InputComp panel_6 = new InputComp();
+		panel_6.setTitle("우편번호");
+		panel_1.add(panel_6);
+		
+		InputComp panel_7 = new InputComp();
+		panel_7.setTitle("주      소");
+		panel_1.add(panel_7);
+		
+		JPanel panel = new JPanel();
+		panelM.add(panel);
+		panel.setLayout(new GridLayout(0, 1, 0, 10));
+		
+		JPanel panel_2 = new JPanel();
+		panel.add(panel_2);
+		
+		JPanel panel_8 = new JPanel();
+		panel.add(panel_8);
+		
+		JPanel panel_9 = new JPanel();
+		panel.add(panel_9);
+		
+		panel_10 = new JPanel();
+		panel.add(panel_10);
+		panel_10.setLayout(null);
+		
+		JPanel panel_11 = new JPanel();
+		panel.add(panel_11);
+		panel_11.setLayout(new GridLayout(1, 0, 0, 0));
+		
+		textField = new JTextField();
+		panel_11.add(textField);
+		textField.setColumns(10);
 
 	}
 

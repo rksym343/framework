@@ -33,13 +33,13 @@ public class ViewTest extends JFrame {
 	 */
 	public ViewTest() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 650, 450);
+		setBounds(100, 100, 700, 500);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(new GridLayout(0, 1, 0, 0));
 		
-		BookSearchBookDetailView panel = new BookSearchBookDetailView();
+		MemberSearchMemberDetailView panel = new MemberSearchMemberDetailView();
 		contentPane.add(panel);
 	}
 

@@ -5,7 +5,7 @@ import java.awt.GridLayout;
 import javax.swing.JPanel;
 
 import book_basic_panel.InputComp;
-import book_basic_panel.bookCodePanel;
+import book_basic_panel.BookCodePanel;
 
 public class PaymentIo extends JPanel {
 
@@ -19,7 +19,7 @@ public class PaymentIo extends JPanel {
 		add(panelBSub);
 		panelBSub.setLayout(new GridLayout(6, 0, 0, 10));
 		
-		bookCodePanel pBCode = new bookCodePanel();
+		BookCodePanel pBCode = new BookCodePanel();
 		panelBSub.add(pBCode);
 		
 		InputComp pBName = new InputComp();
