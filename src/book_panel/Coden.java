@@ -16,7 +16,7 @@ public class Coden extends JPanel {
 		
 		JPanel panelC = new JPanel();
 		add(panelC);
-		panelC.setLayout(new GridLayout(2, 0, 0, 0));
+		panelC.setLayout(new GridLayout(2, 0, 0, 10));
 		
 		InputComp pCName = new InputComp();
 		pCName.setTitle("분      류");

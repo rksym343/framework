@@ -7,9 +7,9 @@ public class PasswordPanel extends CompPanel {
 	protected JPasswordField pwField;
 
 	public PasswordPanel() {
-		
+
 		pwField = new JPasswordField();
-		pValue.add(pwField);
+		pContent.add(pwField);
 
 	}
 
@@ -20,7 +20,5 @@ public class PasswordPanel extends CompPanel {
 	public void setPwField(JPasswordField pwField) {
 		this.pwField = pwField;
 	}
-	
-	
 
 }

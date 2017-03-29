@@ -11,10 +11,10 @@ public class SpinnerPanel extends CompPanel {
 	private JSpinner spinner;
 
 	public SpinnerPanel() {
-		pValue.setLayout(new GridLayout(1, 0, 0, 0));
+		pContent.setLayout(new GridLayout(1, 0, 0, 0));
 
 		spinner = new JSpinner();
-		pValue.add(spinner);
+		pContent.add(spinner);
 
 	}
 

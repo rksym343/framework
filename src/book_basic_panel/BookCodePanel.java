@@ -11,21 +11,18 @@ public class BookCodePanel extends CompPanel {
 	protected JTextField tfBSubCode;
 
 	public BookCodePanel() {
-		
-		JPanel panel = new JPanel();
-		pValue.add(panel);
-		panel.setLayout(new GridLayout(0, 2, 2, 0));
-		
-		tfBCode = new JTextField();
-		panel.add(tfBCode);
-		tfBCode.setColumns(10);
-		
-		tfBSubCode = new JTextField();
-		panel.add(tfBSubCode);
-		tfBSubCode.setColumns(2);
-		
+		lblTitle.setText("도서코드");
 
-		setTitle("도 서 코 드");
+		GridLayout gridLayout = (GridLayout) pContent.getLayout();
+		gridLayout.setHgap(5);
+
+		tfBCode = new JTextField();
+		pContent.add(tfBCode);
+		tfBCode.setColumns(10);
+
+		tfBSubCode = new JTextField();
+		pContent.add(tfBSubCode);
+		tfBSubCode.setColumns(2);
 
 	}
 
@@ -36,16 +33,16 @@ public class BookCodePanel extends CompPanel {
 	public void setTfBCode(String bCode) {
 		tfBCode.setText(bCode);
 	}
+
 	public String getTfBSubCode() {
 		return tfBSubCode.getText();
 	}
 
 	public void setTfBSubCode(int bSubCode) {
-		tfBSubCode.setText(bSubCode+"");
+		tfBSubCode.setText(bSubCode + "");
 	}
 
-	
-	public boolean isEmpty(){
+	public boolean isEmpty() {
 		if (getTfBCode().equals("") || getTfBSubCode().equals("")) {
 			return true;
 		}
@@ -65,9 +62,7 @@ public class BookCodePanel extends CompPanel {
 		if (!Pattern.matches("[0-9]{2}", getTfBSubCode())) {
 			throw new Exception("도서중복코드 형식 오류");
 		}
-		
+
 	}
-	
-	
 
 }

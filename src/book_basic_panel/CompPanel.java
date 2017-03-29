@@ -12,7 +12,6 @@ import java.awt.Insets;
 public class CompPanel extends BasicPanel {
 	
 	protected JLabel lblTitle;
-	protected JPanel pValue;
 
 	public CompPanel() {
 		

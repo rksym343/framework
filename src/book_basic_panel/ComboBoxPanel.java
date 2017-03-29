@@ -12,10 +12,10 @@ public class ComboBoxPanel<T> extends CompPanel {
 	private JComboBox<T> comboBox;
 
 	public ComboBoxPanel() {
-		pValue.setLayout(new GridLayout(1, 0, 0, 0));
+		pContent.setLayout(new GridLayout(1, 0, 0, 0));
 
 		comboBox = new JComboBox();
-		pValue.add(comboBox);
+		pContent.add(comboBox);
 
 	}
 
