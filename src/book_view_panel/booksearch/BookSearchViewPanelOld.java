@@ -2,8 +2,9 @@ package book_view_panel.booksearch;
 
 import javax.swing.JPanel;
 import java.awt.GridLayout;
-import book_panel.BookSearchPanel;
-import book_view_panel.AbsViewPanel;
+
+import kr.or.dgit.book_project.book_panel.AbsViewPanel;
+import kr.or.dgit.book_project.book_panel.BookSearchPanel;
 
 import javax.swing.JButton;
 

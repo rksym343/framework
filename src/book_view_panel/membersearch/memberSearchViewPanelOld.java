@@ -3,8 +3,8 @@ package book_view_panel.membersearch;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-import book_panel.memberSearchPanel;
-import book_view_panel.AbsViewPanel;
+import kr.or.dgit.book_project.book_panel.AbsViewPanel;
+import kr.or.dgit.book_project.book_panel.memberSearchPanel;
 
 public class memberSearchViewPanelOld extends AbsViewPanel {
 
